@@ -9,7 +9,8 @@ namespace AccesoDatos.Data
     public class AplicationDbContext : DbContext
     {
 
-        public DbSet <Usuario> Usuario { get; set; }
+        public DbSet <Artista> Artista{ get; set; }
+        public DbSet <Cancion> Cancion { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
